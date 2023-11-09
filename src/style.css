@@ -11,15 +11,18 @@ header {
 
 nav {
 	display: flex;
+	flex-wrap: wrap; /* Ajout d'une propriété flex-wrap pour que les éléments s'affichent sur plusieurs lignes */
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 10%;
+	padding: 0 5%; /* Réduction de la marge pour les écrans plus petits */
 }
 
 nav ul {
 	list-style: none;
 	display: flex;
 	gap: 30px;
+	margin: 0; /* Suppression de la marge pour les écrans plus petits */
+	padding: 0;
 }
 
 nav ul li a {
@@ -30,15 +33,12 @@ nav ul li a {
 
 #logo {
 	width: 20px;
-}
-
-#logo {
 	font-weight: bold;
 }
 
 main {
 	background-color: #e7e7e7;
-	padding: 20px 10%;
+	padding: 20px 5%; /* Réduction de la marge pour les écrans plus petits */
 }
 
 #carousel {
@@ -70,15 +70,57 @@ hr {
 
 #features {
 	display: flex;
+	flex-wrap: wrap; /* Ajout d'une propriété flex-wrap pour que les éléments s'affichent sur plusieurs lignes */
 	justify-content: space-between;
+	margin: 20px 0;
 }
 
 .feature {
 	background-color: #d3d3d3;
 	text-align: justify;
 	padding: 20px;
-	width: 27%;
+	width: 100%; /* Modification de la largeur pour les écrans plus petits */
+	margin-bottom: 20px; /* Ajout d'une marge en bas pour les écrans plus petits */
 }
+
+@media screen and (min-width: 768px) { /* Media query pour les écrans de taille moyenne */
+	nav {
+		padding: 0 10%;
+	}
+
+	main {
+		padding: 20px 10%;
+	}
+
+	#features {
+		margin: 0;
+	}
+
+	.feature {
+		width: 27%;
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 1024px) { /* Media query pour les grands écrans */
+	nav {
+		padding: 0 15%;
+	}
+
+	main {
+		padding: 20px 15%;
+	}
+
+	#features {
+		margin: 0;
+	}
+
+	.feature {
+		width: 27%;
+		margin-bottom: 0;
+	}
+}
+
 
 footer {
 	background-color: #333;
