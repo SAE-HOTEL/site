@@ -1,3 +1,13 @@
+:root {
+	--main-color1: #23333e;
+	--main-color2: #c27e6c;
+}
+
+@font-face {
+    font-family: 'Font Feature H2';
+    src: url('https://fonts.google.com/specimen/Glass+Antiqua?classification=Handwriting&stroke=Serif');
+}
+
 body {
 	font-family: 'Arial', sans-serif;
 	margin: 0;
@@ -154,17 +164,32 @@ hr {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin: 20px 0;
+	color: whitesmoke;
 }
 
-.feature {
+.featurePair, .featureImpair {
 	background-color: #d3d3d3;
 	text-align: justify;
 	padding: 20px;
 	width: 100%;
 	margin-bottom: 20px;
+
 }
 
-@media screen and (min-width: 768px) {
+.featurePair {
+	background-color: var(--main-color2);
+}
+
+.featureImpair {
+	background-color: var(--main-color1);
+}
+
+.featurePair h2, .featureImpair h2 {
+	text-align: center;
+	font-family: 'Font Feature H2';
+}
+
+@media screen and (min-width: 810px) {
 	nav {
 		padding: 0 10%;
 	}
@@ -177,13 +202,13 @@ hr {
 		margin: 0;
 	}
 
-	.feature {
+	.featurePair, .featureImpair {
 		width: 27%;
 		margin-bottom: 0;
 	}
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1370px) {
 	nav {
 		padding: 0 15%;
 	}
@@ -196,7 +221,7 @@ hr {
 		margin: 0;
 	}
 
-	.feature {
+	.featurePair, .featureImpair {
 		width: 27%;
 		margin-bottom: 0;
 	}
