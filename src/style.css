@@ -10,7 +10,7 @@ body {
 }
 
 header {
-	background-color: #f4f4f4; 
+	background-color: #f4f4f4;
 	padding: 10px 0;
 }
 
@@ -151,6 +151,7 @@ main {
 	from {
 		opacity: 0;
 	}
+
 	to {
 		opacity: 1;
 	}
@@ -158,7 +159,7 @@ main {
 
 hr {
 	border: 1px solid #333;
-	width: 105%;
+	width: 80%;
 	position: relative;
 	left: -2.5%;
 	margin: 20px 0;
@@ -171,7 +172,8 @@ hr {
 	color: whitesmoke;
 }
 
-.featurePair, .featureImpair {
+.featurePair,
+.featureImpair {
 	background-color: #d3d3d3;
 	text-align: justify;
 	padding: 20px;
@@ -188,7 +190,8 @@ hr {
 	background-color: var(--main-color1);
 }
 
-.featurePair, .featureImpair {
+.featurePair,
+.featureImpair {
 	text-align: center;
 	font-family: 'Times New Roman', Times, serif;
 }
@@ -206,7 +209,8 @@ hr {
 		margin: 0;
 	}
 
-	.featurePair, .featureImpair {
+	.featurePair,
+	.featureImpair {
 		width: 27%;
 		margin-bottom: 0;
 	}
@@ -218,14 +222,16 @@ hr {
 	}
 
 	main {
-		padding: 20px 15%;
+		padding: 0px 0%;
 	}
 
 	#features {
 		margin: 0;
+		padding: 0 15%
 	}
 
-	.featurePair, .featureImpair {
+	.featurePair,
+	.featureImpair {
 		width: 27%;
 		margin-bottom: 0;
 	}
@@ -243,4 +249,70 @@ footer {
 	height: auto;
 	object-fit: cover;
 	object-position: center;
+}
+
+.rooms {
+	width: 100%;
+	display: flex;
+}
+
+.rooms .right {
+	width: 60%;
+	padding: 50px;
+	
+}
+.rooms .left {
+	width: 40%;
+	border: 1px solid black;
+}
+
+
+.services {
+	width: 100%;
+	display: flex;
+}
+
+.services .left {
+	width: 60%;
+	padding: 50px;
+}
+
+.services .right {
+	width: 40%;
+	border: 1px solid black;
+}
+
+.aminities {
+	width: 100%;
+	display: flex;
+}
+
+.aminities .left {
+	width: 60%;
+	padding: 50px;
+}
+
+.aminities .right {
+	width: 40%;
+	border: 1px solid black;
+}
+
+.foot {
+	display: inline-block;
+	width: 80%;
+	text-align: left;
+}
+
+.foot h1 {
+	display: inline;
+}
+
+.reseau {
+	display: inline-flex;
+	gap: 15px;
+}
+
+.reseau img {
+	height: 30px;
+	width: 30px;
 }
