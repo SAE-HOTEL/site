@@ -1,6 +1,7 @@
 :root {
 	--main-color1: #23333e;
 	--main-color2: #c27e6c;
+	--text-color: #222;
 }
 
 body {
@@ -19,21 +20,26 @@ nav {
 	flex-wrap: wrap;
 	align-items: baseline;
 	padding: 0 5%;
+	color: var(--text-color);
 }
 
 nav p {
 	margin-right: auto;
-	font-family: 'Ranchers', cursive;
 	font-size: xx-large;
-	padding: 0;
-	margin-bottom: 5px;
+	font-weight: bold;
+	margin: 0;
+	margin-right: auto;
+}
+
+nav p::first-letter {
+	font-size: 1.5em;
 }
 
 nav ul {
 	list-style: none;
 	display: flex;
 	gap: 30px;
-	margin: 0;
+	margin: auto 0;
 	padding: 0;
 	font-size: larger;
 }
@@ -41,28 +47,17 @@ nav ul {
 nav ul li a {
 	text-decoration: none;
 	font-weight: bold;
-	color: #333;
+	color: var(--text-color);
 }
 
 #logo {
-	margin-right: 50px;
-	width: 25px;
+	margin-right: 20px;
+	width: 23px;
 	font-weight: bold;
-}
-
-#flag {
-	margin-left: 10%;
-	width: 30px;
-	height: 30px;
-
-	border: 1px solid grey;
-	border-radius: 50%;
-	object-fit: cover;
 }
 
 main {
 	background-color: #e7e7e7;
-	padding: 0 5%;
 }
 
 .custom-slider {
@@ -168,11 +163,10 @@ main {
 }
 
 hr {
-	border: 1px solid #333;
+	border: 1px solid var(--text-color);
 	width: 80%;
 	position: relative;
 	margin-top: 20px;
-	margin-bottom: 50px;
 }
 
 
@@ -181,6 +175,7 @@ hr {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	color: whitesmoke;
+	padding: 3% 5%;
 }
 
 .featurePair,
@@ -209,11 +204,7 @@ hr {
 
 @media screen and (min-width: 810px) {
 	nav {
-		padding: 0 8% 0 10%;
-	}
-
-	main {
-		padding: 0 10% 20px 10%;
+		padding: 0 10%;
 	}
 
 	#features {
@@ -228,17 +219,8 @@ hr {
 }
 
 @media screen and (min-width: 1370px) {
-	nav {
-		padding: 0 15%;
-	}
-
-	main {
-		padding: 0px 0%;
-	}
-
 	#features {
 		margin: 0;
-		padding: 5% 15%
 	}
 
 	.featurePair,
@@ -249,7 +231,7 @@ hr {
 }
 
 footer {
-	background-color: #333;
+	background-color: var(--text-color);
 	color: white;
 	text-align: center;
 	padding: 10px 0;
