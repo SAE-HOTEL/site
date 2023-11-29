@@ -6,6 +6,8 @@
 	<title>Site Hôtelier</title>
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQmCABVpjxlLqyT7jmr3qJ2ncv5DUlNGA"></script>
+
 </head>
 
 <body>
@@ -28,15 +30,27 @@
 			<div class="slide-container">
 				<div class="custom-slider fade">
 					<img class="slide-img" src="./images/TeddyRinerRoomPlaceholder.png">
-					<div class="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+					<div class="slide-text">
+						<h2>Lorem Ipsum </h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum, sapien semper
+							suscipit vulputate, libero eros aliquam erat, eget finibus. </p>
+					</div>
 				</div>
 				<div class="custom-slider fade">
 					<img class="slide-img" src="https://www.codeur.com/tuto/wp-content/uploads/2021/12/slide2.jpg">
-					<div class="slide-text">Nullam luctus aliquam ornare. </div>
+					<div class="slide-text">
+						<h2>Lorem Ipsum </h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum, sapien semper
+							suscipit vulputate, libero eros aliquam erat, eget finibus. </p>
+					</div>
 				</div>
 				<div class="custom-slider fade">
 					<img class="slide-img" src="https://www.codeur.com/tuto/wp-content/uploads/2021/12/slide3.jpg">
-					<div class="slide-text">Praesent lobortis libero sed egestas suscipit.</div>
+					<div class="slide-text">
+						<h2>Lorem Ipsum </h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum, sapien semper
+							suscipit vulputate, libero eros aliquam erat, eget finibus. </p>
+					</div>
 				</div>
 				<div>
 					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -126,7 +140,7 @@
 			<img src="" />
 		</div>
 	</section>
-
+	<div id="map"></div>
 	<footer>
 		<div class="foot">
 			<h1>Hotel Le Cactus</h1>
@@ -148,6 +162,16 @@
 		<p>&copy; 2023 Hotel Le Cactus. All Rights Reserved.</p>
 	</footer>
 
+	<script>
+		function initMap() {
+			var myLatLng = { lat: 48.8566, lng: 2.3522 }; // Coordonnées de Paris
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 12, // Niveau de zoom
+				center: myLatLng // Centre de la carte
+			});
+		}
+		document.addEventListener('DOMContentLoaded', initMap);
+	</script>
 </body>
 
 </html>
