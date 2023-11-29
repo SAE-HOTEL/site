@@ -17,8 +17,16 @@ header {
 nav {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
+	align-items: baseline;
 	padding: 0 5%;
+}
+
+nav p {
+	margin-right: auto;
+	font-family: 'Ranchers', cursive;
+	font-size: xx-large;
+	padding: 0;
+	margin-bottom: 5px;
 }
 
 nav ul {
@@ -27,6 +35,7 @@ nav ul {
 	gap: 30px;
 	margin: 0;
 	padding: 0;
+	font-size: larger;
 }
 
 nav ul li a {
@@ -36,8 +45,8 @@ nav ul li a {
 }
 
 #logo {
-	margin-right: auto;
-	width: 20px;
+	margin-right: 50px;
+	width: 25px;
 	font-weight: bold;
 }
 
@@ -61,7 +70,7 @@ main {
 }
 
 .slide-container {
-	max-width: 800px;
+	max-width: 100%;
 	position: relative;
 	margin: auto;
 }
@@ -115,13 +124,6 @@ main {
 	top: 0;
 }
 
-.slide-img {
-	width: 100%;
-	height: 300px;
-	object-fit: cover;
-	object-position: center;
-}
-
 .slide-dot {
 	text-align: center;
 }
@@ -161,9 +163,10 @@ hr {
 	border: 1px solid #333;
 	width: 80%;
 	position: relative;
-	left: -2.5%;
-	margin: 20px 0;
+	margin-top: 20px;
+	margin-bottom: 50px;
 }
+
 
 #features {
 	display: flex;
@@ -246,7 +249,7 @@ footer {
 
 .slide-img {
 	width: 100%;
-	height: auto;
+	height: 800px;
 	object-fit: cover;
 	object-position: center;
 }
@@ -259,8 +262,9 @@ footer {
 .rooms .right {
 	width: 60%;
 	padding: 50px;
-	
+
 }
+
 .rooms .left {
 	width: 40%;
 	border: 1px solid black;

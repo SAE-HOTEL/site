@@ -5,19 +5,21 @@
 	<meta charset="UTF-8">
 	<title>Site Hôtelier</title>
 	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
 </head>
 
 <body>
 	<header>
 		<nav>
-			<img id="logo" src="./images/logo.svg" />
+			<img id="logo" src="./images/logo.svg">
+			<p>Hotel Le Cactus</p>
 			<ul>
 				<li><a href="#">Home</a></li>
 				<li><a href="#">Rooms</a></li>
 				<li><a href="#">Contact</a></li>
 				<li><a href="#">About</a></li>
 			</ul>
-			<img id="flag" src="./images/frenchFlag.svg" />
+			<img id="flag" src="./images/frenchFlag.svg">
 		</nav>
 	</header>
 
@@ -25,55 +27,55 @@
 		<section class="slide">
 			<div class="slide-container">
 				<div class="custom-slider fade">
-				  <img class="slide-img" src="./images/TeddyRinerRoomPlaceholder.png">
-				  <div class="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+					<img class="slide-img" src="./images/TeddyRinerRoomPlaceholder.png">
+					<div class="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
 				</div>
 				<div class="custom-slider fade">
-				  <img class="slide-img" src="https://www.codeur.com/tuto/wp-content/uploads/2021/12/slide2.jpg">
-				  <div class="slide-text">Nullam luctus aliquam ornare. </div>
+					<img class="slide-img" src="https://www.codeur.com/tuto/wp-content/uploads/2021/12/slide2.jpg">
+					<div class="slide-text">Nullam luctus aliquam ornare. </div>
 				</div>
 				<div class="custom-slider fade">
-				  <img class="slide-img" src="https://www.codeur.com/tuto/wp-content/uploads/2021/12/slide3.jpg">
-				  <div class="slide-text">Praesent lobortis libero sed egestas suscipit.</div>
+					<img class="slide-img" src="https://www.codeur.com/tuto/wp-content/uploads/2021/12/slide3.jpg">
+					<div class="slide-text">Praesent lobortis libero sed egestas suscipit.</div>
 				</div>
 				<div>
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="next" onclick="plusSlides(1)">&#10095;</a>
-			  </div>
-			  <br>
-			  <div class="slide-dot">
-				<span class="dot" onclick="currentSlide(1)"></span> 
-				<span class="dot" onclick="currentSlide(2)"></span> 
-				<span class="dot" onclick="currentSlide(3)"></span> 
-			  </div>
-			<script>
-				var slideIndex = 1;
-				showSlides(slideIndex);
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				<br>
+				<div class="slide-dot">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+				</div>
+				<script>
+					var slideIndex = 1;
+					showSlides(slideIndex);
 
-				function plusSlides(n) {
-					showSlides(slideIndex += n);
-				}
-
-				function currentSlide(n) {
-					showSlides(slideIndex = n);
-				}
-
-				function showSlides(n) {
-					var i;
-					var slides = document.getElementsByClassName("custom-slider");
-					var dots = document.getElementsByClassName("dot");
-					if (n > slides.length) { slideIndex = 1 }
-					if (n < 1) { slideIndex = slides.length }
-					for (i = 0; i < slides.length; i++) {
-						slides[i].style.display = "none";
+					function plusSlides(n) {
+						showSlides(slideIndex += n);
 					}
-					for (i = 0; i < dots.length; i++) {
-						dots[i].className = dots[i].className.replace(" active", "");
+
+					function currentSlide(n) {
+						showSlides(slideIndex = n);
 					}
-					slides[slideIndex - 1].style.display = "block";
-					dots[slideIndex - 1].className += " active";
-				}
-			</script>
+
+					function showSlides(n) {
+						var i;
+						var slides = document.getElementsByClassName("custom-slider");
+						var dots = document.getElementsByClassName("dot");
+						if (n > slides.length) { slideIndex = 1 }
+						if (n < 1) { slideIndex = slides.length }
+						for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none";
+						}
+						for (i = 0; i < dots.length; i++) {
+							dots[i].className = dots[i].className.replace(" active", "");
+						}
+						slides[slideIndex - 1].style.display = "block";
+						dots[slideIndex - 1].className += " active";
+					}
+				</script>
 		</section>
 		<hr>
 		<section id="features">
@@ -82,7 +84,7 @@
 				<p>Discover the convenience and luxury of our hotel services designed for both leisure and business
 					travelers.</p>
 			</div>
-			<div class="featurePair" >
+			<div class="featurePair">
 				<h2>Rooms</h2>
 				<p>Find your retreat in our stylish and comfortable rooms, equipped for a serene stay and a good night's
 					sleep.</p>
@@ -97,7 +99,8 @@
 	<section class="services">
 		<div class="left">
 			<h2>Services</h2>
-			<p>Find your retreat in our stylish and comfortable rooms, equipped for a serene stay and a good night's sleep.</p>
+			<p>Find your retreat in our stylish and comfortable rooms, equipped for a serene stay and a good night's
+				sleep.</p>
 		</div>
 		<div class="right">
 			<img src="" />
@@ -109,13 +112,15 @@
 		</div>
 		<div class="right">
 			<h2>Rooms</h2>
-			<p>Find your retreat in our stylish and comfortable rooms, equipped for a serene stay and a good night's sleep.</p>
+			<p>Find your retreat in our stylish and comfortable rooms, equipped for a serene stay and a good night's
+				sleep.</p>
 		</div>
-	</section>	
+	</section>
 	<section class="aminities">
 		<div class="left">
 			<h2>Services</h2>
-			<p>Find your retreat in our stylish and comfortable rooms, equipped for a serene stay and a good night's sleep.</p>
+			<p>Find your retreat in our stylish and comfortable rooms, equipped for a serene stay and a good night's
+				sleep.</p>
 		</div>
 		<div class="right">
 			<img src="" />
@@ -126,14 +131,23 @@
 		<div class="foot">
 			<h1>Hotel Le Cactus</h1>
 			<div class="reseau">
-				<img src="./images/X_logo.svg"/>
-				<img src="./images/Facebook_logo.svg"/>
-				<img src="./images/"/>
+				<img src="./images/X_logo.svg" />
+				<img src="./images/Facebook_logo.svg" />
+				<img src="./images/" />
 			</div><br />
 			<p>142 Rue Gabriel à Malheureusement Péri, 93200 Saint-Denis</p>
+			<div class="footer-links">
+				<a href="#">Accueil</a>
+				<a href="#">Services</a>
+				<a href="#">Chambres</a>
+				<a href="#">Amenities</a>
+				<a href="#">Contact</a>
+			</div>
 		</div>
+
 		<p>&copy; 2023 Hotel Le Cactus. All Rights Reserved.</p>
 	</footer>
+
 </body>
 
 </html>
