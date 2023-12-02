@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
 	<meta charset="UTF-8">
 	<title>Site Hôtelier</title>
 	<link rel="stylesheet" href="style.css">
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQmCABVpjxlLqyT7jmr3qJ2ncv5DUlNGA"></script>
 </head>
 
 <body>
@@ -27,27 +25,33 @@
 			<div class="slide-container">
 				<div class="custom-slider fade">
 					<img class="slide-img" src="./images/TeddyRinerRoomPlaceholder.png">
-					<div class="slide-text">
-						<h2>Lorem Ipsum </h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum, sapien semper
-							suscipit vulputate, libero eros aliquam erat, eget finibus. </p>
-					</div>
+					<a href="#">
+						<div class="slide-text">
+							<h2>Lorem Ipsum </h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum, sapien semper
+								suscipit vulputate, libero eros aliquam erat, eget finibus. </p>
+						</div>
+					</a>
 				</div>
 				<div class="custom-slider fade">
 					<img class="slide-img" src="https://www.codeur.com/tuto/wp-content/uploads/2021/12/slide2.jpg">
-					<div class="slide-text">
-						<h2>Lorem Ipsum </h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum, sapien semper
-							suscipit vulputate, libero eros aliquam erat, eget finibus. </p>
-					</div>
+					<a href="#">
+						<div class="slide-text">
+							<h2>Lorem Ipsum </h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum, sapien semper
+								suscipit vulputate, libero eros aliquam erat, eget finibus. </p>
+						</div>
+					</a>
 				</div>
 				<div class="custom-slider fade">
 					<img class="slide-img" src="https://www.codeur.com/tuto/wp-content/uploads/2021/12/slide3.jpg">
-					<div class="slide-text">
-						<h2>Lorem Ipsum </h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum, sapien semper
-							suscipit vulputate, libero eros aliquam erat, eget finibus. </p>
-					</div>
+					<a href="#">
+						<div class="slide-text">
+							<h2>Lorem Ipsum </h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum, sapien semper
+								suscipit vulputate, libero eros aliquam erat, eget finibus. </p>
+						</div>
+					</a>
 				</div>
 				<div>
 					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -59,34 +63,6 @@
 					<span class="dot" onclick="currentSlide(2)"></span>
 					<span class="dot" onclick="currentSlide(3)"></span>
 				</div>
-				<script>
-					var slideIndex = 1;
-					showSlides(slideIndex);
-
-					function plusSlides(n) {
-						showSlides(slideIndex += n);
-					}
-
-					function currentSlide(n) {
-						showSlides(slideIndex = n);
-					}
-
-					function showSlides(n) {
-						var i;
-						var slides = document.getElementsByClassName("custom-slider");
-						var dots = document.getElementsByClassName("dot");
-						if (n > slides.length) { slideIndex = 1 }
-						if (n < 1) { slideIndex = slides.length }
-						for (i = 0; i < slides.length; i++) {
-							slides[i].style.display = "none";
-						}
-						for (i = 0; i < dots.length; i++) {
-							dots[i].className = dots[i].className.replace(" active", "");
-						}
-						slides[slideIndex - 1].style.display = "block";
-						dots[slideIndex - 1].className += " active";
-					}
-				</script>
 		</section>
 		<hr>
 		<section id="features">
@@ -158,17 +134,8 @@
 
 		<p>&copy; 2023 Hotel Le Cactus. All Rights Reserved.</p>
 	</footer>
-
-	<script>
-		function initMap() {
-			var myLatLng = { lat: 48.8566, lng: 2.3522 }; // Coordonnées de Paris
-			var map = new google.maps.Map(document.getElementById('map'), {
-				zoom: 12, // Niveau de zoom
-				center: myLatLng // Centre de la carte
-			});
-		}
-		document.addEventListener('DOMContentLoaded', initMap);
-	</script>
 </body>
-
+<script src="./scriptCarrousel.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQmCABVpjxlLqyT7jmr3qJ2ncv5DUlNGA"></script>
+<script src="./scriptMap.js"></script>
 </html>
