@@ -29,6 +29,10 @@ main {
 	margin-top: 4.33%;
 }
 
+a:visited { 
+	text-decoration: none;
+}
+
 
 
 /**************************************************************
@@ -331,7 +335,7 @@ nav ul li a {
 	justify-content: space-evenly;
 	align-items: center;
 	height: 300px;
-	margin: 7% 0;
+	margin: 7% 0 3% 0;
 }
 
 #about p {
@@ -421,11 +425,16 @@ footer {
 .reseau {
 	display: inline-flex;
 	gap: 15px;
+	float: right;
 }
 
 .reseau img {
 	height: 30px;
 	width: 30px;
+}
+
+#adress {
+	text-align: center;
 }
 
 /**************************************************************
