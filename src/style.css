@@ -258,6 +258,10 @@ nav ul li a {
 	font-family: 'Times New Roman', Times, serif;
 }
 
+.description {
+	text-align: justify;
+}
+
 /**************************************************************
 ***															***
 ***					          SERVICES						***
@@ -340,7 +344,7 @@ nav ul li a {
 
 #about p {
 	width: 50%;
-	text-align: center;
+	text-align: justify;
 }
 
 #about img {
