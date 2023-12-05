@@ -134,7 +134,7 @@ footer {
 	background-color: var(--text-color);
 	color: white;
 	text-align: center;
-	padding: 10px 0;
+	padding: 20px 0 10px 0;
 }
 
 .foot {
@@ -158,6 +158,23 @@ footer {
 	width: 30px;
 }
 
-#adress {
+.footer-links {
 	text-align: center;
+	margin: 20px 0;
+}
+
+.footer-links a {
+	margin: 10px;
+	color: white;
+	text-decoration: underline;
+}
+
+.carbon {
+	display: inline-flex;
+}
+
+.carbon p {
+	margin: auto;
+	margin-right: 50px;
+	color: white;
 }
