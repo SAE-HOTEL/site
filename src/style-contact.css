@@ -93,11 +93,11 @@ nav ul li a {
 
 /**************************************************************
 ***															***
-***					          ABOUT							***
+***					         CONTACT						***
 ***															***
 ***************************************************************/
 
-#about {
+#contact {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -107,22 +107,37 @@ nav ul li a {
     padding-top: 200px;
 }
 
-#about p {
+#contact p {
 	width: 50%;
 	text-align: justify;
 }
 
-#about img {
+#contact img {
 	margin-left: 10px;
 	width: 25px;
 	font-weight: bold;
 }
 
-#about hr {
+#contact hr {
 	width: 4%;
 	border: none;
 	border-top: 5px solid black;
 	margin: 15px 0px 30px 0px;
+}
+
+#contact h3 {
+	width: 50%;
+	text-align: left;
+	text-decoration: underline;
+}
+
+#contact ul {
+	width: 45%;
+	text-align: left;
+}
+
+#contact #heure {
+	width: 45%;
 }
 
 /**************************************************************
