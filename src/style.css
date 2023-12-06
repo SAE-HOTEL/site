@@ -33,7 +33,34 @@ a:visited {
 	text-decoration: none;
 }
 
+.button {
+	background-color: white;
+	border-radius: 8px;
+	border: 2px solid black;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 500;
+	height: 4rem;
+	padding: 0 1.6rem;
+	margin-top: 25px;
+	text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+	transition: all .5s;
+	user-select: none;
+  }
+  
+  .button:hover {
+	color: white;
+	border: none;
+	box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+	transition-duration: .1s;
+  }
 
+  
+@media (min-width: 768px) {
+	.button {
+	  padding: 0 2.6rem;
+	}
+  }
 
 /**************************************************************
 ***															***
@@ -334,6 +361,15 @@ nav ul li a {
 	margin: 15px 0px 30px 0px;
 }
 
+#buttonRoom {
+	position: relative;
+	left: 70%;
+}
+
+#buttonRoom:hover {
+	background-color: var(--main-color1);
+  }
+
 /**************************************************************
 ***															***
 ***					          AMINITIES						***
@@ -404,37 +440,10 @@ nav ul li a {
 	margin: 15px 0px 30px 0px;
 }
 
-#buttonAbout {
-	background-color: white;
-	border-radius: 8px;
-	border: 2px solid black;
-	cursor: pointer;
-	font-size: 16px;
-	font-weight: 500;
-	height: 4rem;
-	padding: 0 1.6rem;
-	margin-top: 25px;
-	text-align: center;
-	text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-	transition: all .5s;
-	user-select: none;
-  }
-  
   #buttonAbout:hover {
 	background-color: var(--main-color2);
-	color: white;
-	border: none;
-	box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
-	transition-duration: .1s;
-  }
-  
-@media (min-width: 768px) {
-	#buttonAbout {
-	  padding: 0 2.6rem;
-	}
-  }
-
-  
+	text-align: center;
+  }  
 
 /**************************************************************
 ***															***
