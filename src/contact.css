@@ -1,0 +1,181 @@
+/**************************************************************
+***															***
+***					          FORMATAGE						***
+***															***
+***************************************************************/
+
+:root {
+	--main-color1: #23333e;
+	--main-color2: #c27e6c;
+	--text-color: #222;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body, html {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+main {
+	height: 100%;
+	background-color: #e7e7e7;
+}
+
+a, a:visited { 
+	text-decoration: none; 
+}
+
+/**************************************************************
+***															***
+***					          NAV BAR						***
+***															***
+***************************************************************/
+
+header {
+	user-select: none;
+	background-color: #f4f4f4;
+	padding: 10px 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99999;
+}
+
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	padding: 0 5%;
+	color: var(--text-color);
+	padding: 0 10%;
+}
+
+nav p {
+	margin-right: auto;
+	font-size: xx-large;
+	font-weight: bold;
+	margin: 0;
+	margin-right: auto;
+}
+
+nav p::first-letter {
+	font-size: 1.5em;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	gap: 30px;
+	margin: auto 0;
+	padding: 0;
+	font-size: larger;
+}
+
+nav ul li a {
+	text-decoration: none;
+	font-weight: bold;
+	color: var(--text-color);
+}
+
+#logo {
+	margin-right: 20px;
+	width: 23px;
+	font-weight: bold;
+}
+
+
+/**************************************************************
+***															***
+***					          ABOUT							***
+***															***
+***************************************************************/
+
+#about {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 300px;
+	margin: 4.33% 0 3% 0;
+    padding-top: 200px;
+}
+
+#about p {
+	width: 50%;
+	text-align: justify;
+}
+
+#about img {
+	margin-left: 10px;
+	width: 25px;
+	font-weight: bold;
+}
+
+#about hr {
+	width: 4%;
+	border: none;
+	border-top: 5px solid black;
+	margin: 15px 0px 30px 0px;
+}
+
+/**************************************************************
+***															***
+***					          FOOTER						***
+***															***
+***************************************************************/
+
+footer {
+	background-color: var(--text-color);
+	color: white;
+	text-align: center;
+	padding: 20px 0 10px 0;
+}
+
+.foot {
+	display: inline-block;
+	width: 80%;
+	text-align: left;
+}
+
+.foot h1 {
+	display: inline;
+}
+
+.reseau {
+	display: inline-flex;
+	gap: 15px;
+	float: right;
+}
+
+.reseau img {
+	height: 30px;
+	width: 30px;
+}
+
+.footer-links {
+	text-align: center;
+	margin: 20px 0;
+}
+
+.footer-links a {
+	margin: 10px;
+	color: white;
+	text-decoration: underline;
+}
+
+.carbon {
+	display: inline-flex;
+}
+
+.carbon p {
+	margin: auto;
+	margin-right: 50px;
+	color: white;
+}
