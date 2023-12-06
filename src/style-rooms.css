@@ -93,33 +93,34 @@ nav ul li a {
 
 /**************************************************************
 ***															***
-***					          SERVICES						***
+***					          ROOMS							***
 ***															***
 ***************************************************************/
 
-.services {
+.left-room,
+.right-room {
 	margin-top: 7%;
-	width: 60%;
+	width: 80%;
 	display: flex;
 	position: relative;
-	left: 20%;
+	left: 10%;
 }
 
-.services .left {
+.left-room .left {
 	width: 60%;
 	padding: 50px;
 }
 
-.services .right {
+.left-room .right {
 	width: 40%;
 	border: 1px solid black;
 }
 
-.services h2 {
+.left-room h2 {
 	text-align: right;
 }
 
-.services hr {
+.left-room hr {
 	width: 4%;
 	border: none;
 	border-top: 5px solid black;
@@ -128,76 +129,29 @@ nav ul li a {
 	left: 96%;
 }
 
-/**************************************************************
-***															***
-***					          ROOM 							***
-***															***
-***************************************************************/
-
-.rooms {
-	margin-top: 7%;
-	width: 60%;
-	display: flex;
-	position: relative;
-	left: 20%;
-}
-
-.rooms .right {
+.right-room .right {
 	width: 60%;
 	padding: 50px;
 }
 
-.rooms .left {
+.right-room .left {
 	width: 40%;
 	border: 1px solid black;
 }
 
-.rooms h2 {
+.right-room h2 {
 	text-align: left;
 }
 
-.rooms hr {
+.right-room hr {
 	width: 4%;
 	border: none;
 	border-top: 5px solid black;
 	margin: 15px 0px 30px 0px;
 }
 
-/**************************************************************
-***															***
-***					          AMINITIES						***
-***															***
-***************************************************************/
-
-.aminities {
-	margin-top: 7%;
-	width: 60%;
-	display: flex;
-	position: relative;
-	left: 20%;
-}
-
-.aminities .left {
-	width: 60%;
-	padding: 50px;
-}
-
-.aminities .right {
-	width: 40%;
-	border: 1px solid black;
-}
-
-.aminities h2 {
-	text-align: right;
-}
-
-.aminities hr {
-	width: 4%;
-	border: none;
-	border-top: 5px solid black;
-	margin: 15px 0px 30px 0px;
-	position: relative;
-	left: 96%;
+.description {
+	text-align: justify;
 }
 
 /**************************************************************
@@ -260,4 +214,24 @@ footer {
 	width: auto;
 	position: relative;
 	left: 10%;
+}
+
+/**************************************************************
+***															***
+***					          RESPONSIVE					***
+***															***
+***************************************************************/
+
+@media screen and (min-width: 810px) {
+	nav {
+		padding: 0 10%;
+	}
+}
+
+@media screen and (min-width: 1370px) {
+	.left-room,
+	.right-room {
+		width: 60%;
+		left: 20%;
+	}
 }

@@ -297,10 +297,10 @@ nav ul li a {
 
 .services {
 	margin-top: 7%;
-	width: 60%;
+	width: 80%;
 	display: flex;
 	position: relative;
-	left: 20%;
+	left: 10%;
 }
 
 .services .left {
@@ -334,10 +334,10 @@ nav ul li a {
 
 .rooms {
 	margin-top: 7%;
-	width: 60%;
+	width: 80%;
 	display: flex;
 	position: relative;
-	left: 20%;
+	left: 10%;
 }
 
 .rooms .right {
@@ -378,10 +378,10 @@ nav ul li a {
 
 .aminities {
 	margin-top: 7%;
-	width: 60%;
+	width: 80%;
 	display: flex;
 	position: relative;
-	left: 20%;
+	left: 10%;
 }
 
 .aminities .left {
@@ -440,10 +440,10 @@ nav ul li a {
 	margin: 15px 0px 30px 0px;
 }
 
-  #buttonAbout:hover {
+#buttonAbout:hover {
 	background-color: var(--main-color2);
 	text-align: center;
-  }  
+}  
 
 /**************************************************************
 ***															***
@@ -548,5 +548,12 @@ footer {
 	.featureImpair {
 		width: 27%;
 		margin-bottom: 0;
+	}
+
+	.rooms,
+	.services,
+	.aminities {
+		width: 60%;
+		left: 20%;
 	}
 }
