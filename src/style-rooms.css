@@ -154,6 +154,46 @@ nav ul li a {
 	text-align: justify;
 }
 
+#singleRoom {
+	background-image: url(./images/singleRoom.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+
+#doubleSeperate {
+	background-image: url(./images/doubleSeparate.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+
+#double {
+	background-image: url(./images/double.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+
+#luxuriousRoom {
+	background-image: url(./images/luxuriousRoom.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+
+#roomTR {
+	background-image: url(./images/TeddyRinerRoomPlaceholder.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+
 /**************************************************************
 ***															***
 ***					          FOOTER						***

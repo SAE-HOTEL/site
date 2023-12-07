@@ -326,6 +326,30 @@ nav ul li a {
 	left: 96%;
 }
 
+#serviceImg {
+	background-image: url(./images/service.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+
+#roomImg {
+	background-image: url(./images/double.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+
+#imgAm {
+	background-image: url(./images/amenities.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+
 /**************************************************************
 ***															***
 ***					          ROOM 							***
