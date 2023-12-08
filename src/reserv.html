@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Site Hôtelier</title>
+	<link rel="stylesheet" href="style-reserv.css">
+</head>
+
+<body>
+    <header>
+		<nav>
+			<a href="#"><img id="logo" src="./images/logo.svg"></a>
+			<p>Hotel Le Cactus</p>
+			<ul>
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./rooms.html">Rooms</a></li>
+                <li><a href="./reserv.html">Reservation</a></li>
+				<li><a href="./contact.html">Contact</a></li>
+				<li><a href="./about.html">About</a></li>
+			</ul>
+		</nav>
+	</header>
+    <main>
+        <form action="/index.html">
+            <h2>Le Cactus <img src="./images/logo.svg" alt="logo_Le-Cactus"></h2>
+            <hr>
+            <p>Please complete the form below
+            <br>Your registration will be verified prior to your arrival. </p>
+            <hr>
+            <fieldset>
+                <legend>Full Name</legend>
+                <label class="name" for="firstName">First Name</label>
+                <input type="text" name="FirstName" id="firstName">
+                <br>
+                <label class="name" for="lastName">Last Name</label>
+                <input type="text" name="LastName" id="lastName">
+            </fieldset>
+            <fieldset>
+                <legend>Contact Informations</legend>
+                <label for="tel">Phone Number</label>
+                <input type="tel" name="tel" id="tel">
+                <br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Arrival - Date/Time
+                </legend>
+                <input type="datetime" name="arrive" id="arrive">
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Departure - Date/Time
+                </legend>
+                <input type="datetime" name="depart" id="depart">
+            </fieldset>
+            <fieldset>
+                <legend>Accomodations</legend>
+                <label for="nbAdult">Number of Adults</label>
+                <input type="number" name="nbAdult" id="nbAdult">
+                <br>
+                <label for="nbChild">Number of Children</label>
+                <input type="number" name="nbChild" id="nbChild">
+            </fieldset>
+            <fieldset>
+                <legend>Payment Method</legend>
+                <input type="radio" name="paiement" id="check">
+                <label for="check">Check</label>
+                <br>
+                <input type="radio" name="paiement" id="cb">
+                <label for="cb">Credit Card</label>
+            </fieldset>
+            <fieldset>
+                <legend>Room Selection</legend>
+                <select name="room" id="roomSelect">
+                    <option value="simple">Single Room</option>
+                    <option value="simple">Double Room Separate Beds</option>
+                    <option value="simple">Classic Double Room</option>
+                    <option value="simple">Luxurious Suites</option>
+                    <option value="simple">Special Room</option>
+                </select>
+            </fieldset>
+            <input class="button" type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+		<div class="foot">
+			<h1>Hotel Le Cactus</h1>
+			<div class="reseau">
+				<a href="https://www.facebook.com/hotelcactus/?locale=en_US"><img src="./images/Facebook_logo.svg" /></a>
+				<a href="https://www.instagram.com/hotel.lecactus/?hl=en"><img src="./images/Instagram_logo_2016.svg" /></a>
+				<a href="https://twitter.com/LeCactus"><img src="./images/X_logo.svg" /></a>
+			</div><br />
+			<p>142 Rue Gabriel Péri, 93200 Saint-Denis</p>
+			<div class="footer-links">
+				<a href="">Home</a>
+				<a href="./rooms.html">Rooms</a>
+				<a href="./contact.html">Contact</a>
+				<a href="./about.html">About</a>
+			</div>
+		</div><br>
+		<div id="wcb" class="carbonbadge wcb-d carbon"><p>&copy; 2023 Hotel Le Cactus. All Rights Reserved.</p></div>
+		<img id="greencode" src="./images/greencode.png" alt="greencode">
+	</footer>
+</body>
+<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+
+</html>
